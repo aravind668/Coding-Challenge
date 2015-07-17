@@ -1,5 +1,5 @@
 import collections.Counter
-def getUniqueWords(allWords):
+def getUniqueWords(Tweet_input.txt):
     uniqueWords = Counter()
 
     for word in allWords:
