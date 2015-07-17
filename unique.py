@@ -1,10 +1,7 @@
-import collections
+import collections.Counter
+def getUniqueWords(allWords):
+    uniqueWords = Counter()
 
-infile = open("Tweet_input.txt")
-words = collections.Counter()
-
-for line in infile:
-    words.update(line.split())
-                              
-for word, count in words.iteritems():
-    print word, count
+    for word in allWords:
+        uniqueWords[word]+=1
+    return uniqueWords.keys() 
